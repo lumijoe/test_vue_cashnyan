@@ -5,17 +5,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
     <title>Test CashNyan</title>
 </head>
 <body>
-    <header id="header" class="h-[52px] w-full bg-slate-500">
+    <header id="header" class="h-[52px] w-full bg-slate-500 flex flex-row justify-between items-center ">
+        <div></div>
         <h1 class="text-3xl text-white">{{ apptitle }}</h1>
-
-
+        <div></div>
     </header>
-
+    <main>
+        <button class="bg-slate-900 rounded-full w-[120px] text-white" id="inputON" @click="changeTitle">一覧リストへ</button>
+    </main>
 
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
